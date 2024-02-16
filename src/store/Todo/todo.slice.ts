@@ -8,5 +8,4 @@ export const todoSlice = createSlice({
   reducers: reducer,
 });
 
-export const { reducer: todoReducer, actions } = todoSlice;
-export const { ADD_TODO, DELETE_TODO } = actions;
+export const { reducer: todoReducer, actions: todoActions } = todoSlice;

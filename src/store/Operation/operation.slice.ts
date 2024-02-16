@@ -11,5 +11,5 @@ const operationSlice = createSlice({
   reducers: reducer,
 });
 
-export const { reducer: operationReducer, actions } = operationSlice;
-export const { PLUS, MINUS, DIVIDE, MULTIPLY } = actions;
+export const { reducer: operationReducer, actions: operationActions } =
+  operationSlice;

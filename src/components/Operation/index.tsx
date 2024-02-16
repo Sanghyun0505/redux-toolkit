@@ -1,10 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store";
-import { PLUS, MINUS, DIVIDE, MULTIPLY } from "../../store/Operation";
+import { operationActions } from "../../store/Operation";
 
 const Operation = () => {
   const { number } = useSelector((state: RootState) => state.operation);
   const dispatch = useDispatch();
+  const { PLUS, MINUS, DIVIDE, MULTIPLY } = operationActions;
 
   return (
     <>

@@ -8,5 +8,4 @@ export const modalSlice = createSlice({
   reducers: reducer,
 });
 
-export const { reducer: modalReducer, actions } = modalSlice;
-export const { ACTIVE_MODAL } = actions;
+export const { reducer: modalReducer, actions: modalActions } = modalSlice;

@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store";
-import { ACTIVE_MODAL } from "../../store/Modal";
 import styled from "styled-components";
+import { modalActions } from "../../store/Modal";
 
 const Modal = () => {
   const { isActive } = useSelector((state: RootState) => state.modal);
   const dispatch = useDispatch();
+  const { ACTIVE_MODAL } = modalActions;
 
   return (
     <>
