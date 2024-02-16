@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ADD_TODO, DELETE_TODO } from "../../store/Todo";
 
 const Todo = () => {
-  const { todos } = useSelector((state: RootState) => state.todo!);
+  const { todos } = useSelector((state: RootState) => state.todo);
   const dispatch = useDispatch();
 
   const [text, setText] = useState("");
